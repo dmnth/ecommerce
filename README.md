@@ -1,1 +1,1 @@
-# ecommerce
+# fake e-store project
