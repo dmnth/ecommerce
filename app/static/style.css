@@ -2,7 +2,6 @@
 body {
      margin: 0;
      padding: 0;
-     background: #232323;
  }
 
  #header {
@@ -12,6 +11,13 @@ body {
      background-size: cover;
      background-position: 50% 0;
      transition: background-color .3s, opacity .3s;
+ }
+
+ html {
+     background-image: url('../static/images/slide_2.jpg');
+     height: 100%;
+     overflow: hidden;
+     background-size: cover;
  }
 
 
@@ -158,7 +164,7 @@ body {
         margin: 0 7px;
         transition: background-color .3s;
         font-size: 1.2em;
-        color: white;
+        color: black;
     }
 
     .menu-desktop li:last-child {
