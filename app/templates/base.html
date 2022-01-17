@@ -2,17 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel='stylesheet' href="{{url_for('static', filename='style.css')}}">
     <title></title>
 </head>
-{% block body %}
 <body>
+{% block body %}
+{% endblock %}
 </body>
-{% endblock %}
-{% block footer %}
 <footer>
-</footer>
+{% block footer %}
 {% endblock %}
+</footer>
 {% block script %}
 {% endblock %}
 </html>
