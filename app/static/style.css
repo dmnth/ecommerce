@@ -1,23 +1,3 @@
-/* Extra small devices (600px and <) */
-@media only screen and (max-width: 600px) {
-}
-
-/* Small devices(portrait tablets and large phones) */
-@media only screen and (min-width: 600px) {
-}
-
-/* Medium devices (landscape tablets, 768px and >) */
-@media only screen and (min-width: 768px) {
-}
-
-/* Large devices (laptops/desctops, 992px and >) */
-@media only screen and (min-width: 992px) {
-}
-
-/*Extra large devices (large laptops and desctops, 1200px and >) */
-@media only screen and (min-width: 1200px) {
-}
-
 
 body {
      margin: 0;
@@ -37,7 +17,8 @@ body {
 
 .header-inner {
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
     height: 80px;
 }
@@ -45,7 +26,7 @@ body {
 .hamburger-menu-toggle {
     display: block;
     position: relative;
-    top: 50px;
+    top: 5px;
     left: 50px;
     z-index: 1;
     -webkit-user-select: none;
@@ -136,6 +117,70 @@ body {
     transform: none;
 }
 
+.menu-desktop {
+    display: none;
+}
+
+
+
+
+
+
+
+/* Extra small devices (600px and <) */
+@media screen and (max-width: 600px) {
+}
+
+/* Small devices(portrait tablets and large phones) */
+@media only screen and (min-width: 600px) {
+}
+
+/* Medium devices (landscape tablets, 768px and >) */
+@media only screen and (min-width: 768px) {
+    .hamburger-menu-toggle {
+        display: none;
+    }
+    .menu-desktop {
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+        position: relative;
+        flex-flow: row wrap;
+        align-items: center;
+        padding-left: 0px;
+    }
+
+    .menu-desktop li {
+        display: inline-block;
+        list-style: none;
+        padding: 0;
+        position: relative;
+        margin: 0 7px;
+        transition: background-color .3s;
+        font-size: 1.2em;
+        color: white;
+    }
+
+    .menu-desktop li:last-child {
+        color: red;
+        margin-right: 50px;
+    }
+
+    .logo {
+        position: relative;
+        display: block;
+        top: 5px;
+        left: 50px;
+    }
+}
+
+/* Large devices (laptops/desctops, 992px and >) */
+@media only screen and (min-width: 992px) {
+}
+
+/*Extra large devices (large laptops and desctops, 1200px and >) */
+@media only screen and (min-width: 1200px) {
+}
 
 
 
